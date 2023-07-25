@@ -1,11 +1,8 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom'
 
-import Home from "./Components/Routes/home/home";
-import Navigation from "./Components/Routes/Navigation/navigation"
-import SignIn from "./Components/Routes/sign-in/sign-in";
-
-
-
+import Home from './Components/Routes/home/home'
+import Navigation from './Components/Routes/Navigation/navigation'
+import SignIn from './Components/Routes/sign-in/sign-in'
 
 const Shop = () => {
   return <h1>shop</h1>
@@ -13,12 +10,12 @@ const Shop = () => {
 
 const App = () => {
   return (
-    <Routes> 
-    <Route path='/' element={<Navigation />} > 
-      <Route index element={<Home />} />
-      <Route path='shop' element={<Shop />} />
-      <Route path='sign-In' element={<SignIn />} />
-    </Route>
+    <Routes>
+      <Route path="/" element={<Navigation />}>
+        <Route index element={<Home />} />
+        <Route path="shop" element={<Shop />} />
+        <Route path="sign-In" element={<SignIn />} />
+      </Route>
     </Routes>
   )
 }
